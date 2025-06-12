@@ -10,11 +10,7 @@ const Skills = () => {
                     <div className={style.skillBorder}>
                         <p>SKILLS</p>
                     </div>
-                    <div className={style.skillImgs}>
-                        <h2>
-                            USING NOW:
-                        </h2>
-                    </div>
+
                     <div className={style.images}>
                         {skillList.map((skill) => (
                             <div key={skill.id}>

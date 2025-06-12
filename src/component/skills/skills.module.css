@@ -58,3 +58,21 @@
     font-weight: 400;
     text-align: center;
 }
+
+
+@media (max-width: 1024px) and (min-width: 768px){
+   .container{
+       padding: 0 20px;
+   }
+}
+@media (max-width: 768px) and (min-width: 300px){
+    .container{
+        padding: 0 20px;
+    }
+    .images img{
+        width: 100px;
+    }
+    .images h2{
+        font-size: 18px;
+    }
+}

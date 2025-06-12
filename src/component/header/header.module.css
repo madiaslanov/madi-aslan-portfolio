@@ -37,4 +37,53 @@
     font-size: 15px;
     cursor: pointer;
 }
-
+@media (max-width: 1760px) and (min-width: 1280px){
+   .holder ul{
+       gap: 40px;
+       margin-right: 65px;
+   }
+    .holder{
+        justify-content: space-between;
+    }
+}
+@media (max-width: 1280px) and (min-width: 1024px){
+    .holder ul{
+        gap: 15px;
+    }
+    .holder ul p{
+        font-size: 15px;
+    }
+    .holder{
+        justify-content: space-between;
+    }
+}
+@media (max-width: 1024px) and (min-width: 768px){
+    .holder ul{
+        gap: 20px;
+    }
+    .holder ul p{
+        font-size: 15px;
+        color: #000000;
+    }
+    .holder{
+        justify-content: space-between;
+    }
+}
+@media (max-width: 768px) and (min-width: 300px){
+    .holder ul{
+        gap: 10px;
+        padding: 0;
+    }
+    .holder ul p{
+        font-size: 12px;
+        color: #000000;
+    }
+    .holder{
+        justify-content: space-between;
+        padding: 0;
+    }
+    .holder img{
+        width: 150px;
+        height: 150px;
+    }
+}

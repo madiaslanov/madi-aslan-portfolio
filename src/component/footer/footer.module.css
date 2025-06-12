@@ -1,6 +1,6 @@
 .footerHolder {
     background-image: url("/footer.svg");
-    height: 40vh;
+    height: 100%;
     text-align: center;
     padding-top: 91px;
 }
@@ -34,4 +34,9 @@
 .footerContact img:hover{
     background-color: transparent;
     cursor: pointer;
+}
+
+.footerHolder p{
+margin: 0;
+    padding-bottom: 20px;
 }

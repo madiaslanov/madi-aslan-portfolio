@@ -24,8 +24,8 @@ const Portfolio = () => {
                     <div className={style.sliderHolder}>
                         <div className={style.slider}>
                             {[...myApps, ...myApps].map((item, index) => (
-                                <NavLink to={item.link}>
-                                    <img src={item.src} alt="slider" key={index} className={style.sliderImage}/>
+                                <NavLink to={item.link}  key={index}>
+                                    <img src={item.src} alt="slider" className={style.sliderImage}/>
                                 </NavLink>
                             ))}
                         </div>

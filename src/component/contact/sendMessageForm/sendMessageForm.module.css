@@ -58,3 +58,10 @@
     font-weight: bold;
 }
 
+.error{
+    color: red;
+    position: absolute;
+    text-align: center;
+    right: 0;
+    font-size: 20px;
+}

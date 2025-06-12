@@ -1,0 +1,101 @@
+.aboutMeHead{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    background-color: #D7D7D7;
+}
+.border{
+    text-align: center;
+    border: 8px solid black;
+    text-align: center;
+    margin-top: 176px;
+    margin-bottom: 71px;
+    width: 350px;
+    overflow: hidden;
+}
+.aboutMeHead h1{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.3em;
+
+}
+
+.aboutMeHead p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+}
+
+.abme1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.abme2 p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 650;
+}
+
+.abme2{
+    display: flex;
+    flex-direction: column;
+    gap: 85px;
+    align-items: center;
+}
+
+.abme2 span{
+    width: 2px;
+    background-color: black;
+    height: 35px;
+}
+
+.explore{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+}
+.mySkills{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.skill1 h3, .skill2 h3, .skill3 h3{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+}
+
+.skill1 p, .skill2 p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.skill1, .skill2 ,.skill3{
+    width: 700px;
+    height: 400px;
+    align-content: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-space: 10px;
+}
+
+.skill3 p{
+    text-align: center;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.skill1 img, .skill2 img,.skill3 img{
+    position: absolute;
+    left: -48px;
+    width: 80px;
+    height: 80px;
+}

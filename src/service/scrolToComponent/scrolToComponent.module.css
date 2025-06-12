@@ -1,0 +1,15 @@
+.scroll p{
+    list-style: none;
+    color: #FFFFFF;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.scroll button{
+    border: none;
+    background: none;
+}
+
+.scroll p:hover{
+    text-decoration: underline;
+}

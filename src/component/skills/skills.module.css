@@ -1,0 +1,60 @@
+.skillHolder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: auto;
+    gap: 8rem;
+}
+.container{
+    padding: 0 200px;
+    background-color: #D7D7D7;
+}
+.skillBorder {
+    border: 8px solid black;
+    width: 400px;
+}
+
+.skillBorder p {
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.4em;
+}
+
+.skillImgs h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: -650px;
+}
+
+.skillImgs {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: -200px;
+}
+
+.images{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.images img {
+    width: 150px;
+    margin-bottom: 2rem;
+    height: 150px;
+}
+.images h2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}

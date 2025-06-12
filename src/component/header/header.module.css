@@ -1,0 +1,40 @@
+.holder{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1000;
+    position: relative;
+    padding: 0 40px;
+}
+
+.holder ul{
+    list-style: none;
+    display: flex;
+    gap: 5rem;
+    font-family: "Montserrat", sans-serif;
+    align-items: center;
+}
+.holder ul li{
+    list-style: none;
+    color: #FFFFFF;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.holder img{
+    width: 200px;
+    height: 200px;
+}
+
+.holder button{
+    border: none;
+    background: #FFFFFF;
+    color: #000000;
+    border-radius: 20px;
+    padding: 12px 15px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+

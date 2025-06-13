@@ -71,12 +71,12 @@
 
 .slider {
     display: flex;
-    animation: scroll-left 40s linear infinite;
+    animation: scroll-left 20s linear infinite;
 }
 
 .sliderImage {
-    width: 700px;
-    height: 600px;
+    width: auto;
+    height: 400px;
     margin-right: 10px;
     flex-shrink: 0;
     transition: transform 0.2s;
@@ -87,7 +87,6 @@
     cursor: pointer;
 }
 
-/* Анимация вынесена отдельно — переопределять её в media-запросах не нужно */
 @keyframes scroll-left {
     0% {
         transform: translateX(0);
@@ -97,7 +96,6 @@
     }
 }
 
-/* --------- МЕДИА-ЗАПРОСЫ --------- */
 
 @media (max-width: 1024px) {
     .sliderImage {

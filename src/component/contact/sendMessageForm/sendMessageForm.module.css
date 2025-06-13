@@ -47,6 +47,7 @@
     justify-content: center;
     gap: 50px;
     margin-bottom: 100px;
+    color: #FFFFFF;
 }
 
 .submitBtn button{
@@ -66,7 +67,6 @@
     font-size: 20px;
     font-family: "Montserrat", sans-serif;
 }
-
 @media (max-width: 768px) and (min-width: 500px){
     .right{
         width: 300px;

@@ -4,11 +4,16 @@
     justify-content: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
 }
 
 .portfolioBg {
     border: 8px solid black;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     margin: 107px auto;
 }
 
@@ -24,9 +29,10 @@
     width: 100%;
     height: 100%;
     background-color: #1A1A1A;
-    align-items: center;
     text-align: center;
     position: relative;
+    box-sizing: border-box;
+    padding: 0 20px;
 }
 
 .portfolioContent h2 {
@@ -44,8 +50,15 @@
     background: #D7D7D7;
     width: 250px;
     display: inline-block;
-    text-align: center;
-    align-self: center;
+    margin: 10px auto;
+}
+
+.portfolioContent p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: #FFFBFB;
+    padding: 20px 0;
+    margin: 0;
 }
 
 .sliderHolder {
@@ -53,6 +66,7 @@
     width: 100%;
     overflow: hidden;
     background-color: #1A1A1A;
+    box-sizing: border-box;
 }
 
 .slider {
@@ -65,8 +79,15 @@
     height: 600px;
     margin-right: 10px;
     flex-shrink: 0;
+    transition: transform 0.2s;
 }
 
+.sliderImage:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+/* Анимация вынесена отдельно — переопределять её в media-запросах не нужно */
 @keyframes scroll-left {
     0% {
         transform: translateX(0);
@@ -76,54 +97,59 @@
     }
 }
 
+/* --------- МЕДИА-ЗАПРОСЫ --------- */
 
-.sliderImage:hover {
-    transform: scale(0.9);
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-.portfolioContent p{
-    font-family: "Montserrat", sans-serif;
-    font-size: 20px;
-    color: #FFFBFB;
-    padding: 20px 0;
-    margin: 0;
-}
-
-@media (max-width: 768px) and (min-width: 480px){
+@media (max-width: 1024px) {
     .sliderImage {
-        width: 400px;
-        height: 400px;
+        width: 500px;
+        height: 450px;
     }
     .slider {
-        display: flex;
-        animation: scroll-left 10s linear infinite;
-    }
-    @keyframes scroll-left {
-        0% {
-            transform: translateX(0);
-        }
-        100% {
-            transform: translateX(-100%);
-        }
+        animation-duration: 30s;
     }
 }
-@media (max-width: 480px) and (min-width: 300px){
+
+@media (max-width: 768px) {
+    .portfolioBg {
+        margin: 60px auto;
+    }
+    .portfolioBg h2 {
+        font-size: 24px;
+    }
+    .portfolioContent h2 {
+        font-size: 24px;
+    }
+    .portfolioContent p {
+        font-size: 18px;
+    }
     .sliderImage {
-        width: 300px;
-        height: 300px;
+        width: 350px;
+        height: 320px;
     }
     .slider {
-        display: flex;
-        animation: scroll-left 10s linear infinite;
+        animation-duration: 20s;
     }
-    @keyframes scroll-left {
-        0% {
-            transform: translateX(0);
-        }
-        100% {
-            transform: translateX(-100%);
-        }
+}
+
+@media (max-width: 480px) {
+    .portfolioBg h2 {
+        font-size: 20px;
+        letter-spacing: 0.2em;
+    }
+    .portfolioContent h2 {
+        font-size: 20px;
+    }
+    .portfolioContent p {
+        font-size: 16px;
+    }
+    .sliderImage {
+        width: 250px;
+        height: 220px;
+    }
+    .slider {
+        animation-duration: 15s;
+    }
+    .portfolioContent span {
+        width: 180px;
     }
 }

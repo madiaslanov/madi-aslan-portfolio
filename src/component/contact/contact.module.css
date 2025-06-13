@@ -1,30 +1,31 @@
-.contactHolder{
+.contactHolder {
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
     background-color: #E5E5E5;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 20px; /* немного внутреннего отступа для мелких экранов */
+    box-sizing: border-box;
 }
 
-.contactBorder p{
+.contactBorder {
+    border: 8px solid black;
+    width: 400px;
+    margin-top: 142px;
+    text-align: center;
+}
+
+.contactBorder p {
     font-weight: bold;
     text-align: center;
     font-size: 30px;
     font-family: "Montserrat", sans-serif;
     letter-spacing: 0.4em;
+    margin: 20px 10px; /* добавим немного пространства внутри */
 }
 
-.contactBorder{
-    border: 8px solid black;
-    width: 400px;
-    margin-top: 142px;
-    text-align: center;
-
-}
-
-
-.contactDesc{
+.contactDesc {
     align-items: center;
     text-align: center;
     padding-top: 60px;
@@ -32,8 +33,59 @@
     display: flex;
     flex-direction: column;
     gap: 60px;
+    max-width: 800px;
 }
 
-@media (max-width: 768px) and (min-width: 300px){
+/* ---------- АДАПТИВ ---------- */
 
+@media (max-width: 1024px) {
+    .contactBorder {
+        width: 80%;
+        margin-top: 100px;
+    }
+
+    .contactBorder p {
+        font-size: 26px;
+        letter-spacing: 0.3em;
+    }
+
+    .contactDesc {
+        padding-top: 50px;
+        gap: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contactBorder {
+        width: 90%;
+        margin-top: 80px;
+    }
+
+    .contactBorder p {
+        font-size: 22px;
+        letter-spacing: 0.2em;
+    }
+
+    .contactDesc {
+        padding-top: 40px;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contactBorder {
+        width: 100%;
+        margin-top: 60px;
+        border-width: 5px;
+    }
+
+    .contactBorder p {
+        font-size: 18px;
+        letter-spacing: 0.15em;
+    }
+
+    .contactDesc {
+        padding-top: 30px;
+        gap: 30px;
+    }
 }

@@ -3,16 +3,20 @@
     flex-direction: column;
     align-items: center;
     height: 100%;
-    width: auto;
+    width: 100%;
     gap: 8rem;
 }
-.container{
+
+.container {
     padding: 0 200px;
     background-color: #D7D7D7;
+    box-sizing: border-box;
 }
+
 .skillBorder {
     border: 8px solid black;
     width: 400px;
+    margin-top: 100px;
 }
 
 .skillBorder p {
@@ -21,6 +25,14 @@
     font-size: 30px;
     font-family: "Montserrat", sans-serif;
     letter-spacing: 0.4em;
+}
+
+.skillImgs {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: -200px;
 }
 
 .skillImgs h2 {
@@ -32,15 +44,7 @@
     left: -650px;
 }
 
-.skillImgs {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin-left: -200px;
-}
-
-.images{
+.images {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -49,30 +53,113 @@
 
 .images img {
     width: 150px;
-    margin-bottom: 2rem;
     height: 150px;
+    margin-bottom: 2rem;
 }
-.images h2{
+
+.images h2 {
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
     font-weight: 400;
     text-align: center;
 }
 
+/* ------------------ АДАПТИВ ------------------ */
 
-@media (max-width: 1024px) and (min-width: 768px){
-   .container{
-       padding: 0 20px;
-   }
+/* Планшеты */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 40px;
+    }
+
+    .skillImgs {
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .skillImgs h2 {
+        position: static;
+        text-align: center;
+        font-size: 26px;
+        margin-bottom: 1rem;
+    }
+
+    .skillBorder {
+        width: 300px;
+    }
+
+    .skillBorder p {
+        font-size: 24px;
+        letter-spacing: 0.3em;
+    }
+
+    .images img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .images h2 {
+        font-size: 20px;
+    }
 }
-@media (max-width: 768px) and (min-width: 300px){
-    .container{
+
+/* Мобильные устройства */
+@media (max-width: 768px) {
+    .container {
         padding: 0 20px;
     }
-    .images img{
-        width: 100px;
+
+    .skillHolder {
+        gap: 4rem;
     }
-    .images h2{
+
+    .skillBorder {
+        width: 260px;
+        border-width: 6px;
+    }
+
+    .skillBorder p {
+        font-size: 20px;
+        letter-spacing: 0.2em;
+    }
+
+    .skillImgs h2 {
+        font-size: 22px;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .images {
+        justify-content: center;
+    }
+
+    .images img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .images h2 {
         font-size: 18px;
+    }
+}
+
+/* Очень маленькие устройства */
+@media (max-width: 480px) {
+    .skillBorder {
+        width: 220px;
+        border-width: 5px;
+    }
+
+    .skillBorder p {
+        font-size: 18px;
+    }
+
+    .images img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .images h2 {
+        font-size: 16px;
     }
 }

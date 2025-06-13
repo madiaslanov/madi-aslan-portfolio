@@ -1,113 +1,229 @@
-.aboutMeHead{
+.aboutMeHead {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5rem;
     background-color: #D7D7D7;
+    padding: 0 20px; /* для маленьких экранов */
+    box-sizing: border-box;
 }
-.border{
+
+.border {
     text-align: center;
     border: 8px solid black;
-    text-align: center;
     margin-top: 176px;
     margin-bottom: 71px;
     width: 350px;
     overflow: hidden;
 }
-.aboutMeHead h1{
+
+.aboutMeHead h1 {
     font-size: 30px;
     font-weight: bold;
     font-family: "Montserrat", sans-serif;
     letter-spacing: 0.3em;
-
 }
 
-.aboutMeHead p{
+.aboutMeHead p {
     font-family: "Open Sans", sans-serif;
     font-size: 15px;
 }
 
-.abme1{
+.abme1 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.abme2 p{
+
+.abme2 {
+    display: flex;
+    flex-direction: column;
+    gap: 85px;
+    align-items: center;
+    text-align: center;
+}
+
+.abme2 p {
     font-family: "Montserrat", sans-serif;
     font-size: 15px;
     font-weight: 650;
 }
 
-.abme2{
-    display: flex;
-    flex-direction: column;
-    gap: 85px;
-    align-items: center;
-}
-
-.abme2 span{
+.abme2 span {
     width: 2px;
     background-color: black;
     height: 35px;
 }
 
-.explore{
+.explore {
     display: flex;
     flex-direction: row;
     gap: 30px;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
 }
-.mySkills{
+
+.mySkills {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 60px;
 }
 
-.skill1 h3, .skill2 h3, .skill3 h3{
-    font-size: 22px;
-    font-weight: bold;
-    font-family: "Montserrat", sans-serif;
-}
-
-.skill1 p, .skill2 p{
-    font-family: "Open Sans", sans-serif;
-    font-size: 14px;
-    margin: 0;
-    padding: 0;
-}
-
-.skill1, .skill2 ,.skill3{
+.skill1,
+.skill2,
+.skill3 {
     width: 700px;
     height: 400px;
     align-content: center;
     position: relative;
     display: flex;
     flex-direction: column;
-    text-space: 10px;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+    background: none;
 }
 
-.skill3 p{
-    text-align: center;
-    line-height: 20px;
+.skill1 h3,
+.skill2 h3,
+.skill3 h3 {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 10px;
+}
+
+.skill1 p,
+.skill2 p,
+.skill3 p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
     margin: 0;
     padding: 0;
+    line-height: 1.5;
 }
 
-.skill1 img, .skill2 img,.skill3 img{
+.skill3 p {
+    text-align: center;
+}
+
+.skill1 img,
+.skill2 img,
+.skill3 img {
     position: absolute;
     left: -48px;
     width: 80px;
     height: 80px;
 }
 
-@media (max-width: 1024px) and (min-width: 768px){
-    .skill1, .skill2, .skill3{
+/* ---------- АДАПТИВ ---------- */
+
+/* Планшеты */
+@media (max-width: 1024px) {
+    .skill1,
+    .skill2,
+    .skill3 {
         width: 90%;
+        height: auto;
+    }
+
+    .border {
+        width: 300px;
+        margin-top: 120px;
+        margin-bottom: 50px;
+    }
+
+    .aboutMeHead h1 {
+        font-size: 26px;
     }
 }
-@media (max-width: 768px) and (min-width: 300px){
-    .skill1, .skill2, .skill3{
-        width: 90%;
-        height: 200px;
+
+/* Мобильные */
+@media (max-width: 768px) {
+    .aboutMeHead {
+        gap: 3rem;
+    }
+
+    .border {
+        width: 260px;
+        margin-top: 100px;
+        margin-bottom: 40px;
+        border-width: 6px;
+    }
+
+    .aboutMeHead h1 {
+        font-size: 22px;
+        letter-spacing: 0.2em;
+    }
+
+    .aboutMeHead p {
+        font-size: 14px;
+    }
+
+    .abme2 {
+        gap: 50px;
+    }
+
+    .explore {
+        gap: 20px;
+    }
+
+    .skill1,
+    .skill2,
+    .skill3 {
+        width: 100%;
+        height: auto;
+        padding: 16px;
+        border: none;
+    }
+
+    .skill1 h3,
+    .skill2 h3,
+    .skill3 h3 {
+        font-size: 18px;
+    }
+
+    .skill1 p,
+    .skill2 p,
+    .skill3 p {
+        font-size: 13px;
+    }
+
+    .skill1 img,
+    .skill2 img,
+    .skill3 img {
+        left: 10px;
+        top: 10px;
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .border {
+        width: 220px;
+        margin-top: 80px;
+        margin-bottom: 30px;
+        border-width: 5px;
+    }
+
+    .aboutMeHead h1 {
+        font-size: 20px;
+    }
+
+    .skill1 img,
+    .skill2 img,
+    .skill3 img {
+        width: 50px;
+        height: 50px;
+        left: 5px;
+        top: 5px;
     }
 }

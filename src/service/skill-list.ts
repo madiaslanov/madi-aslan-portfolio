@@ -11,7 +11,6 @@ export const skillList = [
     {id: 15, name: 'REDUX', src: '/skill-list/img15.svg'},
     {id: 14, name: 'DOCKER', src: '/skill-list/img14.png'},
     {id: 12, name: 'FIGMA', src: '/skill-list/img5.svg'},
-    {id: 10, name: 'REDUX', src: '/skill-list/img15.svg'},
     {id: 16, name: 'WEBSOCKET', src: '/skill-list/img16.svg'},
     {id: 17, name: 'POSTMAN', src: '/skill-list/img17.svg'},
     {id: 7, name: 'TAILWIND CSS', src: '/skill-list/img19.svg'},

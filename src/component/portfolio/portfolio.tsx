@@ -1,7 +1,6 @@
 import style from './portfolio.module.css';
 import {myApps} from "../../service/skill-list.ts";
 import {NavLink} from "react-router-dom";
-
 const Portfolio = () => {
 
     return (

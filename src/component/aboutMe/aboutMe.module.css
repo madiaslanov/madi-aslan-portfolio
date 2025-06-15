@@ -4,7 +4,7 @@
     align-items: center;
     gap: 5rem;
     background-color: #D7D7D7;
-    padding: 0 20px; /* для маленьких экранов */
+    padding: 0 20px;
     box-sizing: border-box;
 }
 
@@ -123,9 +123,8 @@
     height: 80px;
 }
 
-/* ---------- АДАПТИВ ---------- */
 
-/* Планшеты */
+
 @media (max-width: 1024px) {
     .skill1,
     .skill2,
@@ -145,7 +144,6 @@
     }
 }
 
-/* Мобильные */
 @media (max-width: 768px) {
     .aboutMeHead {
         gap: 3rem;

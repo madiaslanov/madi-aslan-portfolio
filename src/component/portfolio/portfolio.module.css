@@ -71,7 +71,9 @@
 
 .slider {
     display: flex;
-    animation: scroll-left 20s linear infinite;
+    width: max-content;
+    animation: scroll-left 30s linear infinite;
+    will-change: transform;
 }
 
 .sliderImage {
@@ -92,10 +94,15 @@
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-70%);
+        transform: translateX(-50%);
     }
 }
 
+@media (min-width: 1025px) {
+    .slider {
+        animation-duration: 30s;
+    }
+}
 
 @media (max-width: 1024px) {
     .sliderImage {
@@ -103,7 +110,7 @@
         height: 450px;
     }
     .slider {
-        animation-duration: 30s;
+        animation-duration: 20s;
     }
 }
 
@@ -125,7 +132,7 @@
         height: 320px;
     }
     .slider {
-        animation-duration: 20s;
+        animation-duration: 10s;
     }
 }
 
@@ -144,10 +151,10 @@
         width: 250px;
         height: 220px;
     }
-    .slider {
-        animation-duration: 15s;
-    }
     .portfolioContent span {
         width: 180px;
+    }
+    .slider {
+        animation-duration: 8s;
     }
 }

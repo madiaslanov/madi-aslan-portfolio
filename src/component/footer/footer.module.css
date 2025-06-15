@@ -16,14 +16,14 @@
     padding-bottom: 20px;
 }
 
-/* Контейнер и иконки */
+
 .footerContact {
     padding: 50px 20px;
     display: flex;
     gap: 30px;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap; /* позволяет иконкам переноситься на новую строку */
+    flex-wrap: wrap;
 }
 
 .footerContact img {
@@ -42,7 +42,7 @@
     border: none;
 }
 
-/* --------- АДАПТИВ --------- */
+
 
 @media (max-width: 768px) {
     .footerHolder p {
